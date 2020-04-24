@@ -33,3 +33,19 @@ Employee.set_raise_amt(1.5)
 print(Employee.raise_amount)
 print(emp_1.raise_amount)
 print(emp_2.raise_amount)
+
+# Class methods as alternative constructors. What does this mean? you can use these class methods in order to provide multiple wasy of creating our objects.
+
+# in this case, someone is trying to parse out a string of an employee's name from the given string.
+
+emp_str_1 = 'Aaron-Glenn-101'
+emp_str_1 = 'Edward-Glenn-201'
+emp_str_1 = 'Aaron-Edward-301'
+
+first, last, pay = emp_str_1.split('-')
+
+new_emp_1 = Employee(first, last, pay)
+new_emp_1 = Employee.from_string(emp_str_1)
+
+print(new_emp_1.email)
+print(new_emp_1.pay)
