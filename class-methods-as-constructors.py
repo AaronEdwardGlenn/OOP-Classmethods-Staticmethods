@@ -1,4 +1,6 @@
 # Class methods as alternative constructors. What does this mean? you can use these class methods in order to provide multiple wasy of creating our objects.
+
+
 class Employee:
     raise_amount = 1.04
     num_of_emps = 0
